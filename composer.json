@@ -1,0 +1,13 @@
+{
+    "name": "hibara428/vscode-php-docker",
+    "description": "VSCode+PHP+Docker development test environment",
+    "authors": [
+        {
+            "name": "hibara428",
+            "email": "hibara428@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/polyfill-uuid": "^1.23"
+    }
+}

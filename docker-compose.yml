@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  vscode-php:
+    build:
+      context: .
+      dockerfile: ./docker/dev/Dockerfile
+    image: local/vscode-php:dev
+    container_name: vscode-php
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./docker/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini:ro
+      - ./:/app:rw
+    environment:
+      - TZ=Asia/Tokyo

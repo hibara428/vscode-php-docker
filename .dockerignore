@@ -1,0 +1,6 @@
+# VSCode
+.devcontainer
+.vscode
+# composer
+/vendor/
+
